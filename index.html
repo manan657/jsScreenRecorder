@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder</title>
+    <style>
+        button {
+            background: transparent;
+            border: 1px solid grey;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    
+        video {
+            margin: auto;
+            height: 90vh;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <video controls="true" style="display:none" id="videoResult" src=""></video>
+    </div>
+    <div style="text-align: center">
+        <button id="startBtn"  onclick="startRecord()">Start recording</button>
+        <button id="stopBtn" style="display:none" onclick="stopScreen()">Stop recording</button>
+        <a href="#"  id="downloadbtn" style="display:none"><button> Download Video </button></a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
